@@ -1,0 +1,29 @@
+# Entorno virtual de Python
+venv/
+ENV/
+env/
+*.pyc
+*.pyo
+__pycache__/
+
+# Configuración sensible (puedes usar variables de entorno en su lugar)
+.env
+config.py
+
+# Archivos de base de datos locales
+*.sqlite3
+/migrations/
+
+# Archivos generados por Flask-Migrate
+migrations/
+instance/
+*.log
+
+# Archivos de depuración y caché
+*.swp
+*.swo
+*.DS_Store
+*.bak
+.idea/
+.vscode/
+__pycache__/
