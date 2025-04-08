@@ -5,10 +5,13 @@ from flask_jwt_extended import JWTManager
 from config import Config
 from models import db
 from routes.auth_routes import auth_bp
+from flask_cors import CORS
+
 
 app = Flask(__name__)
 app.config.from_object(Config)
 
+CORS(app)
 db.init_app(app)
 migrate = Migrate(app, db)
 jwt = JWTManager(app)
